@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/viewlovedtextbg">
+    
+   
+    
+    <TextView
+        android:id="@+id/lovedtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#4D000000"
+        android:textColor="#ffffff"
+        android:textSize="13pt" 
+        android:layout_weight="70"/>
+ <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_weight="10"
+     >
+     <TextView android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Goto: "
+         android:textSize="8pt"
+         android:textColor="#ffffff"/>
+     <EditText android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:hint="Fact no."
+         android:id="@+id/editno"
+         android:textColor="#178ccc"
+         android:digits="0123456789"
+         android:inputType="phone"
+         />
+     <ImageButton android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/go"
+         android:background="@null"
+         android:id="@+id/bgo"/>
+        
+     
+     
+ </LinearLayout>  
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_weight="20"
+     >
+    <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/prev"
+        android:background="@null"
+        android:id="@+id/prevb"/>
+    <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unlove"
+        android:background="@null"
+        android:id="@+id/unlove"/>
+    <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:background="@null"
+        android:id="@+id/nextb"/>
+    
+</LinearLayout>
+
+
+</LinearLayout>
